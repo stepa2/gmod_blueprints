@@ -278,6 +278,7 @@ function meta:BuildRootFolders( node )
 
 	end
 
+	self:RecursiveBuildFolders( self:FolderNode(node, "Everything", "Everything", nil, true), self.AssetPath, "GAME")
 end
 
 function meta:CreateResultsPanel( parent )
